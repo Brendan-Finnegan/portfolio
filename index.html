@@ -1,19 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Brendan Finnegan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<main class="container section">
-  <div class="prose">
-    <h1>Brendan Finnegan</h1>
-    <p>Portfolio coming soon.</p>
-  </div>
-</main></body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="site-name" href="index.html">Brendan Finnegan</a>
+      <nav aria-label="Main">
+        <ul class="nav">
+          <li><a href="writing.html">Writing</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container section hero">
+      <img class="hero__photo" src="images/headshot.jpg" alt="Portrait of Brendan Finnegan" width="1000" height="1000">
+      <div class="hero__text">
+        <h1>Brendan Finnegan</h1>
+        <p class="lead">I am a sophomore at The George Washington University studying Political Science and Computer Science, with plans to attend law school. I am interested in the intersection of technology, law, and public policy, particularly AI governance, data privacy, and addressing misinformation in digital spaces. I hope to better understand how emerging technologies can be regulated to protect individual rights and strengthen democratic institutions.</p>
+        <p><a href="writing.html">Read my writing</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Brendan Finnegan</p>
+    </div>
+  </footer>
+</body>
 </html>
