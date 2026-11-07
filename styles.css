@@ -77,3 +77,13 @@ img { display: block; max-width: 100%; height: auto; }
 
 /* ---------- Footer ---------- */
 .site-footer { border-top: 1px solid var(--line); padding-block: var(--space-3); color: var(--muted); font-size: 0.95rem; }
+
+/* ---------- Writing ---------- */
+.post-list { list-style: none; margin: var(--space-4) 0 0; padding: 0; max-width: var(--measure); }
+.post { padding-block: var(--space-3); border-top: 1px solid var(--line); }
+.post h2 { margin-bottom: 0.25rem; }
+.post h2 a { text-decoration: none; }
+.post h2 a:hover { text-decoration: underline; }
+.post-meta { color: var(--muted); font-size: 0.95rem; margin-bottom: var(--space-2); }
+.post-meta a { color: var(--muted); }
+article h2 { margin-top: var(--space-3); }
