@@ -1,0 +1,56 @@
+/* ---------- Design tokens: change a value here, it changes everywhere ---------- */
+:root {
+  --navy: #033C5A;
+  --text: #1a1a1a;
+  --muted: #5c6670;
+  --line: #e3e6e9;
+  --tint: #f4f7f9;
+  --white: #ffffff;
+
+  --font: "Schibsted Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 2rem;
+  --space-4: 4rem;
+
+  --measure: 40rem;  /* width of reading text */
+  --wide: 64rem;     /* width of overall page */
+}
+
+/* ---------- Base ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  font-size: 1.125rem;
+  line-height: 1.65;
+  color: var(--text);
+  background: var(--white);
+}
+
+h1, h2, h3 {
+  color: var(--navy);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin: 0 0 var(--space-2);
+}
+h1 { font-size: clamp(2.25rem, 5vw + 1rem, 3.75rem); }
+h2 { font-size: clamp(1.5rem, 2vw + 1rem, 2rem); }
+h3 { font-size: 1.25rem; }
+
+p { margin: 0 0 var(--space-2); }
+
+a { color: var(--navy); text-underline-offset: 0.2em; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible { outline: 3px solid var(--navy); outline-offset: 3px; }
+
+img { display: block; max-width: 100%; height: auto; }
+
+/* ---------- Layout helpers ---------- */
+.container { width: min(var(--wide), 100% - 3rem); margin-inline: auto; }
+.prose { max-width: var(--measure); }
+.section { padding-block: var(--space-4); }
+.section--tint { background: var(--tint); }
