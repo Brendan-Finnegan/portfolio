@@ -78,7 +78,6 @@
               <li>Mobilized and led a 30+ member volunteer team to produce 1,000+ pages of debate research for 2,500+ students nationwide, coordinating assignments and deadlines.</li>
               <li>Created and maintained a website using Wix and used multiple social media platforms to reach audiences.</li>
               <li>Researched, wrote, edited, and organized debate materials for a national audience.</li>
-              <li>Isegora Briefs reached 2,500 people.</li>
             </ul>
           </li>
         </ul>
@@ -97,8 +96,8 @@
       <section aria-labelledby="contact-heading">
         <h2 id="contact-heading">Contact</h2>
         <ul>
-          <li>Email: <span>TODO: add email address</span></li>
-          <li>LinkedIn: <span>TODO: add LinkedIn profile URL</span></li>
+		  <li>Email: <a id="email-link" href="#">available with JavaScript on</a></li> 
+	      <li>LinkedIn: <a href="https://www.linkedin.com/in/brendan-e-finnegan/">LinkedIn profile</a></li>
           <li>GitHub: <a href="https://github.com/Brendan-Finnegan">Brendan-Finnegan</a></li>
         </ul>
       </section>
@@ -110,5 +109,14 @@
       <p>&copy; 2026 Brendan Finnegan</p>
     </div>
   </footer>
+  
+  <script>
+	const user = "brendan.finnegan";
+  	const domain = ["gwu", "edu"].join(".");
+  	const link = document.getElementById("email-link");
+  	link.href = "mailto:" + user + "@" + domain;
+  	link.textContent = user + "@" + domain;
+  </script>
+
 </body>
 </html>

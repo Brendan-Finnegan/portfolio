@@ -68,7 +68,7 @@ img { display: block; max-width: 100%; height: auto; }
 
 /* ---------- Hero ---------- */
 .hero { display: grid; gap: var(--space-3); align-items: center; }
-.hero__photo { width: 11rem; aspect-ratio: 1; object-fit: cover; }
+.hero__photo { width: 100%; max-width: 18rem; aspect-ratio: 1; object-fit: cover; }
 .lead { font-size: 1.35rem; }
 @media (min-width: 48rem) {
   .hero { grid-template-columns: 14rem 1fr; gap: var(--space-4); }
